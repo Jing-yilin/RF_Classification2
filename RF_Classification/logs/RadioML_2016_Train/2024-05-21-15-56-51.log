@@ -1,0 +1,4 @@
+2024-05-21 15:56:51,009 - __main__ - INFO - 🚀Model: transformer
+2024-05-21 15:56:51,011 - __main__ - INFO - 🚀Model Save: True
+2024-05-21 15:56:51,022 - __main__ - INFO - 🚀Device: mps
+2024-05-21 15:56:53,189 - __main__ - INFO - classes: 11

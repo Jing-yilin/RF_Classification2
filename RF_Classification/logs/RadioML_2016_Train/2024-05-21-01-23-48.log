@@ -1,0 +1,96 @@
+2024-05-21 01:23:48,526 - __main__ - INFO - 🚀Model: resnet18
+2024-05-21 01:23:48,528 - __main__ - INFO - 🚀Model Save: True
+2024-05-21 01:23:48,539 - __main__ - INFO - 🚀Device: mps
+2024-05-21 01:23:50,743 - __main__ - INFO - classes: 11
+2024-05-21 01:23:50,892 - __main__ - INFO - ResNet(
+  (conv1): Conv2d(1, 256, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=11, bias=True)
+)
+----------------------
+Trainable Parameters: 10968331
+Fixed Parameters: 0
+Total Parameters: 10968331
+----------------------
+
+2024-05-21 01:42:31,685 - __main__ - INFO - ===============================
+2024-05-21 01:42:31,687 - __main__ - INFO - Overall Testing Accuracy: 0.6024
+2024-05-21 01:42:31,688 - __main__ - INFO - SNR (dB)	Accuracy (%)
+2024-05-21 01:42:31,688 - __main__ - INFO - ===============================
+2024-05-21 01:42:31,689 - __main__ - INFO - -16	11.3
+2024-05-21 01:42:31,689 - __main__ - INFO - -2	81.3
+2024-05-21 01:42:31,690 - __main__ - INFO - -12	16.9
+2024-05-21 01:42:31,690 - __main__ - INFO - -18	10.2
+2024-05-21 01:42:31,691 - __main__ - INFO - -6	63.2
+2024-05-21 01:42:31,691 - __main__ - INFO - 14	85.6
+2024-05-21 01:42:31,691 - __main__ - INFO - -8	44.6
+2024-05-21 01:42:31,692 - __main__ - INFO - 12	85.5
+2024-05-21 01:42:31,692 - __main__ - INFO - 8	85.9
+2024-05-21 01:42:31,693 - __main__ - INFO - -20	10.5
+2024-05-21 01:42:31,693 - __main__ - INFO - 4	85.7
+2024-05-21 01:42:31,694 - __main__ - INFO - 0	83.2
+2024-05-21 01:42:31,694 - __main__ - INFO - -10	26.5
+2024-05-21 01:42:31,694 - __main__ - INFO - 6	85.7
+2024-05-21 01:42:31,695 - __main__ - INFO - 18	86.5
+2024-05-21 01:42:31,695 - __main__ - INFO - 2	85.8
+2024-05-21 01:42:31,696 - __main__ - INFO - -4	72.5
+2024-05-21 01:42:31,696 - __main__ - INFO - 10	85.9
+2024-05-21 01:42:31,697 - __main__ - INFO - -14	12.6
+2024-05-21 01:42:31,697 - __main__ - INFO - 16	85.6
+2024-05-21 01:42:31,698 - __main__ - INFO - ===============================
+2024-05-21 01:42:31,698 - __main__ - INFO - Confusion Matrix:
+2024-05-21 01:42:31,698 - __main__ - INFO - [[28.3 44.9 22.3  0.7  2.5  0.1  0.7  0.2  0.2  0.1  0. ]
+ [ 5.1 71.  21.4  0.3  1.1  0.2  0.6  0.2  0.1  0.   0. ]
+ [ 0.1  1.4 93.6  0.6  0.6  0.3  2.5  0.4  0.3  0.1  0. ]
+ [ 0.1  0.5 28.3 65.9  1.3  0.2  1.6  0.8  0.9  0.2  0. ]
+ [ 1.   1.6 25.7  1.3 68.8  0.2  0.9  0.3  0.1  0.1  0. ]
+ [ 0.1  0.5 20.9  0.9  0.5 70.5  5.3  0.6  0.4  0.1  0.1]
+ [ 0.1  0.5 28.7  1.   0.4  2.8 65.2  0.5  0.6  0.   0.1]
+ [ 0.1  0.4 29.2  2.1  0.6  0.5  2.4 57.6  4.9  1.4  0.7]
+ [ 0.1  0.7 29.7  2.1  0.9  0.5  2.1  2.2 58.4  2.5  0.7]
+ [ 0.1  0.4 17.9  2.   0.5  0.5  2.1  1.7  4.3 55.8 14.6]
+ [ 0.1  0.2 10.6  1.8  0.5  0.7  2.1  1.5  3.8 51.2 27.5]]

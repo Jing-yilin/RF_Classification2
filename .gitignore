@@ -1,0 +1,12 @@
+# pacache
+**/__pycache__
+
+RML2016.10a_dict.pkl
+
+RM2016_best.pt
+
+best_model.pt
+RF_Classification/rfml/data/rf1024_data/trainData.mat
+RF_Classification/rfml/data/rf1024_data/trainLabels.mat
+RF_Classification/rfml/data/rf1024_data/valData.mat
+RF_Classification/rfml/data/rf1024_data/valLabels.mat

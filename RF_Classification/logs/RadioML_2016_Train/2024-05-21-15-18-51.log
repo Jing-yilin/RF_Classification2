@@ -1,0 +1,78 @@
+2024-05-21 15:18:51,689 - __main__ - INFO - 🚀Model: resnet18
+2024-05-21 15:18:51,691 - __main__ - INFO - 🚀Model Save: True
+2024-05-21 15:18:51,712 - __main__ - INFO - 🚀Device: mps
+2024-05-21 15:18:53,902 - __main__ - INFO - classes: 11
+2024-05-21 15:18:54,059 - __main__ - INFO - ResNet(
+  (conv1): Conv2d(1, 256, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer3): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (layer4): Sequential(
+    (0): BasicBlock(
+      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (downsample): Sequential(
+        (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): BasicBlock(
+      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=512, out_features=256, bias=True)
+  (fc2): Linear(in_features=256, out_features=11, bias=True)
+)
+----------------------
+Trainable Parameters: 10968331
+Fixed Parameters: 0
+Total Parameters: 10968331
+----------------------
+
+2024-05-21 15:20:56,633 - rfml.nn.train.standard - INFO - train acc: 0.5390410958904109, val acc: 0.5370766488413548
+2024-05-21 15:23:04,791 - rfml.nn.train.standard - INFO - train acc: 0.5760226075294569, val acc: 0.5747771836007131
+2024-05-21 15:24:59,610 - rfml.nn.train.standard - INFO - train acc: 0.5786282210939745, val acc: 0.580035650623886
+2024-05-21 15:26:53,968 - rfml.nn.train.standard - INFO - train acc: 0.5799501867995018, val acc: 0.5773618538324421
+2024-05-21 15:28:48,361 - rfml.nn.train.standard - INFO - train acc: 0.5874269566050387, val acc: 0.5907308377896613
+2024-05-21 15:30:48,866 - rfml.nn.train.standard - INFO - train acc: 0.5942714819427148, val acc: 0.5935828877005348
+2024-05-21 15:32:46,934 - rfml.nn.train.standard - INFO - train acc: 0.60833892135262, val acc: 0.6131016042780749
+2024-05-21 15:34:43,900 - rfml.nn.train.standard - INFO - train acc: 0.6202701408180861, val acc: 0.6209447415329769
+2024-05-21 15:36:42,511 - rfml.nn.train.standard - INFO - train acc: 0.6261231918766166, val acc: 0.6254901960784314
+2024-05-21 15:38:39,979 - rfml.nn.train.standard - INFO - train acc: 0.6427387680812339, val acc: 0.6411764705882353
+2024-05-21 15:40:36,330 - rfml.nn.train.standard - INFO - train acc: 0.6515279241306638, val acc: 0.6541889483065954
+2024-05-21 15:42:33,319 - rfml.nn.train.standard - INFO - train acc: 0.6640339112941853, val acc: 0.6612299465240642
+2024-05-21 15:44:28,435 - rfml.nn.train.standard - INFO - train acc: 0.6718938595650924, val acc: 0.6723707664884135
+2024-05-21 15:46:22,536 - rfml.nn.train.standard - INFO - train acc: 0.6849841938883034, val acc: 0.6813725490196079
+2024-05-21 15:48:16,940 - rfml.nn.train.standard - INFO - train acc: 0.7015997700929207, val acc: 0.706951871657754
+2024-05-21 15:50:12,278 - rfml.nn.train.standard - INFO - train acc: 0.7188571702270332, val acc: 0.7165775401069518
+2024-05-21 15:52:07,226 - rfml.nn.train.standard - INFO - train acc: 0.7375323306830156, val acc: 0.7341354723707665
+2024-05-21 15:54:05,583 - rfml.nn.train.standard - INFO - train acc: 0.7582814445828144, val acc: 0.7533868092691622
+2024-05-21 15:56:01,837 - rfml.nn.train.standard - INFO - train acc: 0.781152409234601, val acc: 0.781283422459893

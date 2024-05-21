@@ -1,0 +1,33 @@
+2024-05-21 16:42:30,841 - __main__ - INFO - 🚀Model: transformer
+2024-05-21 16:42:30,843 - __main__ - INFO - 🚀Model Save: True
+2024-05-21 16:42:30,861 - __main__ - INFO - 🚀Device: mps
+2024-05-21 16:42:32,797 - __main__ - INFO - classes: 11
+2024-05-21 16:42:32,820 - __main__ - INFO - Transformer(
+  (embedding): Linear(in_features=2, out_features=128, bias=True)
+  (transformer_encoder): TransformerEncoder(
+    (layers): ModuleList(
+      (0-2): 3 x TransformerEncoderLayer(
+        (self_attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+        )
+        (linear1): Linear(in_features=128, out_features=2048, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (linear2): Linear(in_features=2048, out_features=128, bias=True)
+        (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+        (dropout1): Dropout(p=0.1, inplace=False)
+        (dropout2): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (fc1): Linear(in_features=16384, out_features=256, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (fc2): Linear(in_features=256, out_features=64, bias=True)
+  (fc3): Linear(in_features=64, out_features=11, bias=True)
+)
+----------------------
+Trainable Parameters: 6007563
+Fixed Parameters: 0
+Total Parameters: 6007563
+----------------------
+

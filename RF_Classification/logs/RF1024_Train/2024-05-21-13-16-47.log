@@ -1,0 +1,45 @@
+2024-05-21 13:16:47,856 - __main__ - INFO - 🚀Model: resnet18
+2024-05-21 13:16:47,858 - __main__ - INFO - 🚀Learning Rate: 0.001
+2024-05-21 13:16:47,858 - __main__ - INFO - 🚀Momentum: 0.9
+2024-05-21 13:16:47,859 - __main__ - INFO - 🚀Epoch: 20
+2024-05-21 13:16:47,859 - __main__ - INFO - 🚀Model Save: True
+2024-05-21 13:16:47,860 - __main__ - INFO - 🚀Batch Size: 32
+2024-05-21 13:16:47,860 - __main__ - INFO - 🚀Shuffle: True
+2024-05-21 13:16:47,861 - __main__ - INFO - 🚀Drop Last: True
+2024-05-21 13:16:47,861 - __main__ - INFO - 🚀Number of Workers: 0
+2024-05-21 13:16:47,905 - __main__ - INFO - 🚀Device: mps
+2024-05-21 13:16:48,219 - __main__ - INFO - Total Step: 250
+2024-05-21 13:16:48,223 - __main__ - INFO - ===========================Epoch: 0===========================
+2024-05-21 13:17:11,117 - __main__ - INFO - train loss: 0.8777, train acc: 70.3875
+2024-05-21 13:17:12,393 - __main__ - INFO - validation loss: 0.2892, validation acc: 91.1875
+
+2024-05-21 13:17:12,531 - __main__ - INFO - Detected network improvement, saving current model
+2024-05-21 13:17:12,532 - __main__ - INFO - ===========================Epoch: 1===========================
+2024-05-21 13:17:34,696 - __main__ - INFO - train loss: 0.5748, train acc: 87.9000
+2024-05-21 13:17:35,988 - __main__ - INFO - validation loss: 0.2303, validation acc: 92.0000
+
+2024-05-21 13:17:36,117 - __main__ - INFO - Detected network improvement, saving current model
+2024-05-21 13:17:36,118 - __main__ - INFO - ===========================Epoch: 2===========================
+2024-05-21 13:17:58,306 - __main__ - INFO - train loss: 0.4507, train acc: 91.5000
+2024-05-21 13:17:59,566 - __main__ - INFO - validation loss: 0.1990, validation acc: 93.6250
+
+2024-05-21 13:17:59,666 - __main__ - INFO - Detected network improvement, saving current model
+2024-05-21 13:17:59,667 - __main__ - INFO - ===========================Epoch: 3===========================
+2024-05-21 13:18:22,984 - __main__ - INFO - train loss: 0.3768, train acc: 94.4125
+2024-05-21 13:18:24,359 - __main__ - INFO - validation loss: 0.1728, validation acc: 94.5625
+
+2024-05-21 13:18:24,467 - __main__ - INFO - Detected network improvement, saving current model
+2024-05-21 13:18:24,467 - __main__ - INFO - ===========================Epoch: 4===========================
+2024-05-21 13:18:47,527 - __main__ - INFO - train loss: 0.3264, train acc: 95.8000
+2024-05-21 13:18:48,817 - __main__ - INFO - validation loss: 0.1528, validation acc: 99.2500
+
+2024-05-21 13:18:48,904 - __main__ - INFO - Detected network improvement, saving current model
+2024-05-21 13:18:48,905 - __main__ - INFO - ===========================Epoch: 5===========================
+2024-05-21 13:19:10,977 - __main__ - INFO - train loss: 0.2892, train acc: 96.8125
+2024-05-21 13:19:12,268 - __main__ - INFO - validation loss: 0.1462, validation acc: 95.2500
+
+2024-05-21 13:19:12,270 - __main__ - INFO - ===========================Epoch: 6===========================
+2024-05-21 13:19:34,668 - __main__ - INFO - train loss: 0.2585, train acc: 97.8500
+2024-05-21 13:19:35,941 - __main__ - INFO - validation loss: 0.1763, validation acc: 86.5625
+
+2024-05-21 13:19:35,943 - __main__ - INFO - ===========================Epoch: 7===========================
